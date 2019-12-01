@@ -1,0 +1,16 @@
+﻿<!---->
+
+<launch>
+  <!--<group ns = "my_name">-->
+  <node pkg = "odomcal" name="odomcal" type="odomcal" output="screen">
+    <param name="sim_used" value="false" />
+    <param name="test_file_path" value="../../../src/odomcal" />
+    <param name="file_name_prefix" value="test_" />
+    <param name="file_num" value="4" />
+    <param name="file_observ_name" value="observations" />
+    <param name="puls_per_circle" value="100000" />
+    <param name="result_file_path" value="../../../src/odomcal/result" />
+    <param name="result_file_name" value="result.txt" />
+  </node>
+  <!--</group>-->
+</launch>
